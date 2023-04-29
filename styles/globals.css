@@ -18,5 +18,5 @@ html {
 }
 
 h2:has(+ .capsul.hidden) {
-  @apply bg-cyan-900
+  @apply bg-cyan-950
 }
