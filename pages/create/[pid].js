@@ -12,6 +12,7 @@ import EducationComponent from "@/components/Sections/Education"
 import HobbiesComponent from "@/components/Sections/Hobbies"
 import LanguagesComponent from "@/components/Sections/Languages"
 import PrintSettings from "@/components/Modals/PrintScreen"
+import Colors from "@/components/Sections/Colors"
 
 const Chosen = () => {
   const router = useRouter()
@@ -20,6 +21,7 @@ const Chosen = () => {
   const refs = useRef([]);
   const [isRight, setIsRight] = useState("");
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [color, setColor] = useState(null);
 
   const skillsObj = new class Skills {
     constructor() {
@@ -166,6 +168,9 @@ const Chosen = () => {
     window.onafterprint = () => router.push("/")
   }
 
+  const colorsChange = (item) => {
+    setColor(item)
+  }
 
   return (
 
@@ -176,11 +181,11 @@ const Chosen = () => {
           (() => {
             switch (pid) {
               case 'mercury':
-                return <Mercury datas={state} />
+                return <Mercury datas={state} color={color} />
               case 'venus':
-                return <Venus datas={state} />
+                return <Venus datas={state} color={color} />
               case 'anthem':
-                return <Anthem datas={state} />
+                return <Anthem datas={state} color={color} />
             }
           })()
 
@@ -203,6 +208,8 @@ const Chosen = () => {
         <HobbiesComponent hobiesObj={hobiesObj} state={state} refs={refs} openedTab={openedTab} />
 
         <LanguagesComponent state={state} refs={refs} openedTab={openedTab} languageObj={languageObj} />
+
+        <Colors colorsChange={colorsChange} />
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-5'>
           <button target="_blank" onClick={createcv} title="Create CV" className=" bg-green-600 hover:opacity-90 flex-2 transition-all font-bold py-2 text-lg">Create CV</button>

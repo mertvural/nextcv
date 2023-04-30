@@ -1,9 +1,9 @@
-export default function Mercury({ datas }) {
+export default function Mercury({ datas, color }) {
     return (
 
         <div className="flex-1 bg-gray-50 h-full">
 
-            <article className="header px-5 py-2 bg-gray-700 text-white">
+            <article className={"header px-5 py-2 text-white bg-gray-700 "+color+" "}>
                 {/* name */}
                 <div className="name font-bold mb-2 text-em1.5">
                     {datas.name}

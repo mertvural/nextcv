@@ -1,4 +1,4 @@
-export default function Anthem({ datas }) {
+export default function Anthem({ datas, color }) {
     return (
 
         <div className="flex-1 bg-gray-50 h-full">
@@ -10,7 +10,7 @@ export default function Anthem({ datas }) {
                 </div>
                 {/* short description */}
                 <article className="short-description">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Short Description
                     </h4>
                     {
@@ -24,7 +24,7 @@ export default function Anthem({ datas }) {
 
                 {/* contact */}
                 <div className="contact mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Contact
                     </h4>
                     <ul>
@@ -50,7 +50,7 @@ export default function Anthem({ datas }) {
 
                 {/* skills */}
                 <article className="skills mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Skills
                     </h4>
                     <ul className="px-5 py-2 list-disc">
@@ -66,7 +66,7 @@ export default function Anthem({ datas }) {
 
                 {/* work history */}
                 <article className="work-history mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Work History
                     </h4>
                     {
@@ -97,7 +97,7 @@ export default function Anthem({ datas }) {
 
                 {/*education*/}
                 <article className="education mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Education
                     </h4>
                     {
@@ -130,7 +130,7 @@ export default function Anthem({ datas }) {
 
                 {/*Hobbies*/}
                 <article className="hobbies mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Hobbies
                     </h4>
                     <div className="item-work flex flex-wrap mb-3 gap-4">
@@ -146,7 +146,7 @@ export default function Anthem({ datas }) {
 
                 {/*Languages*/}
                 <article className="languages mb-3">
-                    <h4 className="font-bold bg-gray-200 py-1 px-2 mb-2">
+                    <h4 className={"font-bold bg-gray-200 py-1 px-2 mb-2 " + (color && 'text-white '+color+' ')}>
                         Languages
                     </h4>
                     <div className="item-work flex flex-wrap mb-3">

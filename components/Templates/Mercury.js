@@ -1,7 +1,7 @@
-export default function Mercury({datas}) {
+export default function Mercury({datas, color}) {
     return (
         <div className="flex flex-wrap bg-white h-full">
-            <div className="flex-1 bg-gray-50">
+            <div className={"flex-1 bg-gray-50 " + (color && 'text-white '+color+'')}>
 
                 {/* name */}
                 <article className="name font-bold mb-3 px-5 py-5 text-em1.5">
@@ -10,7 +10,7 @@ export default function Mercury({datas}) {
 
                 {/* contact */}
                 <article className="contact">
-                    <h4 className="bg-gray-200 px-5 font-bold">
+                    <h4 className={"bg-gray-200 px-5 font-bold " + (color && 'bg-white text-primary')}>
                         Contact
                     </h4>
                     <div className="px-5 py-2">
@@ -39,7 +39,7 @@ export default function Mercury({datas}) {
 
                 {/* skills */}
                 <article className="skills">
-                    <h4 className="bg-gray-200 px-5 font-bold">
+                    <h4 className={"bg-gray-200 px-5 font-bold " + (color && 'bg-white text-primary')}>
                         Skills
                     </h4>
                     <ul className="px-5 py-2 list-disc">

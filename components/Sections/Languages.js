@@ -1,6 +1,6 @@
 export default function ({ state, refs, openedTab, languageObj }) {
     return (
-        <div className='languages mb-5 flex-1'>
+        <div className='languages mb-5'>
             <h2 onClick={(e) => openedTab(e)} className='text-xl mb-4 font-bold bg-cyan-900 text-white px-3 py-1 hover:opacity-90 cursor-pointer rounded'>Languages</h2>
             <div className='capsul hidden'>
                 <div className='flex flex-wrap -mx-3'>
