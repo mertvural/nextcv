@@ -20,3 +20,12 @@ html {
 h2:has(+ .capsul.hidden) {
   @apply bg-cyan-950
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+}
