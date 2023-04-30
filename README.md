@@ -1,6 +1,5 @@
 ## NextCV
 ### Fast and easy cv generator
-<br>
 
 ## Getting Started
 
