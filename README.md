@@ -1,5 +1,6 @@
 ## NextCV
 ### Fast and easy cv generator
+see app [here](https://neextcv.netlify.app/)
 
 ## Getting Started
 
